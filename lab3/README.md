@@ -1,9 +1,15 @@
 ## Component Tree
-App
- └── TodoApp (state: todos)
-       ├── AddTodoForm (props: onAddTodo)
-       └── TodoList (props: todos, onRemoveTodo)
-             └── TodoItem (props: id, text, onRemove, state: completed)
+- **App**
+  - **TodoApp**
+    - **state:** `todos`
+    - **AddTodoForm**
+      - **props:** `onAddTodo`
+    - **TodoList**
+      - **props:** `todos`, `onRemoveTodo`
+      - **TodoItem**
+        - **props:** `id`, `text`, `onRemove`
+        - **state:** `completed`
+
 
 ## Data Flow
 - TodoApp holds the state of the tasks (todos) using useState.
