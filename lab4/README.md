@@ -1,5 +1,5 @@
 ## Component Tree + Data Flow Diagram
-![Component Diagram](./diagram.svg)
+![Component Diagram](./Diagram.svg)
 
 - App – main component; renders the title and TodoList.
 - TodoList – uses useTodos() for state (todos, isLoading, error, add/delete/toggle); renders add form and list of TodoItems.
